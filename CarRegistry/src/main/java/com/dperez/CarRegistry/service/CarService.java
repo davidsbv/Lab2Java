@@ -1,0 +1,13 @@
+package com.dperez.CarRegistry.service;
+
+import com.dperez.CarRegistry.model.Car;
+
+import java.util.List;
+
+public interface CarService {
+
+    // Marca por defecto
+   String getDefaultBrand();
+
+   List<Car> getCarsByBrand(String brand);
+}
