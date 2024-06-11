@@ -35,12 +35,28 @@ public class CarServiceImpl implements CarService {
         return defaultBrand;
     }
 
+    @Override
+    public List<Car> getAllCars() {
+
+        List<Car> allCarsList = carRepository.findAll();
+
+        allCarsList.forEach(car -> System.out.println(car.toString()));
+
+        String message = allCarsList.isEmpty() ? String.format("No cars founded.") :
+                                                 String.format("Cars founded: %d", allCarsList.size());
+        log.info(message);
+
+        return allCarsList;
+    }
+
 
     // Método para buscar coche por marca, recibe la marca como parámetro y devuelve el rsultado como una lista.
     // Informa en el log del resultado de la búsqueda.
     @Override
     public List<Car> getCarsByBrand(String brand) {
+
         List<Car> carsByBrand = carRepository.findByBrand(brand);
+
         carsByBrand.forEach(car -> System.out.println(car.toString()));
 
         String message = carsByBrand.isEmpty() ? String.format("No cars found for brand: %s", brand) :

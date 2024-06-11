@@ -9,5 +9,7 @@ public interface CarService {
     // Marca por defecto
    String getDefaultBrand();
 
+   List<Car> getAllCars();
+
    List<Car> getCarsByBrand(String brand);
 }

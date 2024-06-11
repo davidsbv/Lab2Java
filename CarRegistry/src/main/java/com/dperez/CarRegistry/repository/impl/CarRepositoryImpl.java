@@ -29,7 +29,7 @@ public class CarRepositoryImpl implements CarRepository {
         );
 
        // Se muestran los datos de las instancias en el log
-       cars.forEach(car -> log.info(car.toString()));
+      // cars.forEach(car -> log.info(car.toString()));
     }
 
     // Devuelve todos los coches
