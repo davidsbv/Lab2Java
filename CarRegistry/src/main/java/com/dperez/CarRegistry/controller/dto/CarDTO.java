@@ -1,7 +1,6 @@
-package com.dperez.CarRegistry.controller.dtos;
+package com.dperez.CarRegistry.controller.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
