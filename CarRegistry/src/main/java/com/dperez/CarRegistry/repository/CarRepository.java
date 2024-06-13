@@ -1,6 +1,6 @@
 package com.dperez.CarRegistry.repository;
 
-import com.dperez.CarRegistry.model.Car;
+import com.dperez.CarRegistry.service.model.Car;
 
 import java.util.List;
 

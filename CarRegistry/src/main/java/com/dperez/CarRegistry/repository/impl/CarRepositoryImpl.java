@@ -1,10 +1,9 @@
 package com.dperez.CarRegistry.repository.impl;
 
-import com.dperez.CarRegistry.model.Car;
+import com.dperez.CarRegistry.service.model.Car;
 import com.dperez.CarRegistry.repository.CarRepository;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;

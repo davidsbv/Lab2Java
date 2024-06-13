@@ -1,14 +1,11 @@
 package com.dperez.CarRegistry.service.impl;
 
-import com.dperez.CarRegistry.model.Car;
+import com.dperez.CarRegistry.service.model.Car;
 import com.dperez.CarRegistry.repository.CarRepository;
 import com.dperez.CarRegistry.service.CarService;
 
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.juli.logging.Log;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

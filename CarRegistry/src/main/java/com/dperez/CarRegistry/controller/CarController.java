@@ -1,16 +1,12 @@
 package com.dperez.CarRegistry.controller;
 
-import com.dperez.CarRegistry.controller.dtos.CarDTO;
-import com.dperez.CarRegistry.model.Car;
+import com.dperez.CarRegistry.controller.dto.CarDTO;
 import com.dperez.CarRegistry.service.CarService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.StreamingHttpOutputMessage;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 @Slf4j
 @RestController // Indica qeu es un controlador de Spring MVC
 public class CarController {
